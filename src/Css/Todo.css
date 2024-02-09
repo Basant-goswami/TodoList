@@ -1,0 +1,110 @@
+.container {
+    min-height: 60vh;
+    min-width: 66%;
+    background-color: rgb(255, 242, 244);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 40% 50%;
+    grid-gap: 10px;
+    border-radius: 18px;
+    /* box-shadow: 1px 1px 2px 2px rgb(241, 241, 241); */
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    margin: 10px;
+}
+
+.box1 input {
+    transition: 1s;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+    border: solid 1.5px #D3D3D3;
+    width: 80%;
+    padding: 10px;
+    border-radius: 12px;
+}
+.box1 h2 {
+    text-align: center;
+}
+.box1inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    margin-top: 12px;
+    border: solid 0.5px #D3D3D3;
+    border-radius: 8px;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    background-color: white;
+
+}
+
+.btn:hover {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    background-color: rgb(46, 76, 247);
+    color: white;
+    transition: all;
+    transition-duration: 0.8s;
+
+}
+
+.box1 h2 .box2 h2 {
+    text-align: center;
+}
+
+.box2 li {
+    font-size: 20px;
+
+}
+
+.box2 .btn {
+    left: 0px;
+    margin-bottom: 8px;
+    margin-left: 6px;
+}
+
+#Todo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* responsive for phone */
+
+@media only screen and (max-width: 620px) {
+    body{
+        background-color: white;
+
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100%;
+        box-shadow: none;
+        padding-left: 10px;
+        background-color: white;
+    }
+    .box1 h2 {
+        text-align: center;
+    }
+    .box2 .btn {
+        left: 0px;
+        margin-bottom: 8px;
+    }
+}
